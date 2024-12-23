@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistem Hitung Poin</title>
+  <link rel="stylesheet" href="styles.css">
+</head> 
+<body>
+  <div class="container">
+    <h1>Sistem Hitung Poin Otomatis</h1>
+    <div class="form-group">
+      <label for="participant">Nama Tim:</label>
+      <input type="text" id="participant" placeholder="Masukkan nama Tim">
+    </div>
+    <div class="form-group">
+      <label for="points">Poin Kemenangan:</label>
+      <input type="number" id="points" placeholder="Masukkan poin">
+    </div>
+    <button id="addParticipant">Tambah Tim</button>
+
+    <h2>Klasemen Tim</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Tim</th>
+          <th>Poin</th>
+        </tr> 
+      </thead>
+      <tbody id="participantList">
+        <!-- Peserta akan ditampilkan di sini -->
+      </tbody>
+    </table>
+
+    <button id="calculateIterative">Urutkan (Iteratif)</button>
+    <button id="calculateRecursive">Urutkan (Rekursif)</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
